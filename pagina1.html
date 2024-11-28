@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Completo</title>
+    <style>
+        /*degradado*/
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Panel de navegación fijo */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #a50000;
+            font-weight: bold;
+            font-style: italic;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /*Figuras*/
+        .cuadro {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            top: 400px;
+            left: 50px;
+        }
+
+        .circulo {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 400px;
+            left: 500px;
+            
+        }
+
+        .triangulo {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid green;
+            position: absolute;
+            top: 300px;
+            left: 50px;
+        }
+
+        /* Estilo del summary */
+        summary {
+            font-size: 20px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Bienvenidos a mi página</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="pagina1.html">Página 1</a>
+        <a href="pagina2.html">Página 2</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section con artículo -->
+        <section>
+            <article>
+                <h2>Artículo 1</h2>
+                <p>Contenido del artículo 1</p>
+            </article>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <p>Contenido secundario relacionado.</p>
+        </aside>
+
+        <!-- Figuras geométricas -->
+        <div class="cuadro"></div>
+        <div class="circulo"></div>
+        <div class="triangulo"></div>
+
+        <!-- Summary -->
+        <details>
+            <summary>Más detalles</summary>
+            <p>Contenido adicional aquí</p>
+        </details>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Mi página web</p>
+    </footer>
+</body>
+</html>
